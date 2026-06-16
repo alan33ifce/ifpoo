@@ -1,5 +1,5 @@
 
-public class Animal {
+public abstract class Animal {
 	protected String nome;
 	protected int idade;
 	protected boolean faminto;
@@ -13,9 +13,7 @@ public class Animal {
 		this.idade = idade;
 	}
 
-	public void emitirSom() {
-		System.out.println("O animal emite um som");
-	}
+	public abstract void emitirSom();
 	
 	public String getNome() {
 		return nome;
