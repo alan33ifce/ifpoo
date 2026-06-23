@@ -15,8 +15,7 @@ public abstract class Animal {
 	public String exibirDados() {
     return "Nome: " + nome +
            "\nIdade: " + idade +
-           "\nDono: " + (dono != null ? dono.getNome() : "nenhum") +
-           "\nTelefone: " + (dono != null ? dono.getTelefone() : "nenhum");
+           "\nDono: " + (dono == null || dono.getNome().isEmpty() ? "Sem Dono" : dono.getNome());
 	}
 
 	public abstract void emitirSom();

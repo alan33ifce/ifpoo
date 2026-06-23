@@ -120,11 +120,6 @@ public class TelaPetShop extends JFrame {
 				if (raca.isEmpty())
 					raca = "Indefinida";
 
-				if (nomeTutor.isEmpty()) {
-  					exibirTexto("Nome do tutor não pode estar vazio.");
-    				return;
-				}
-
 				if (contemNumero(nomeTutor)) {
   				  exibirTexto("Nome do tutor não pode conter números.");
    					 return;
