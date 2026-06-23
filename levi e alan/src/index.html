@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Bem-vindo à Minha Homepage</h1>
+            <p>Este é um projeto de aprendizado em HTML, CSS e JavaScript</p>
+        </header>
+
+        <!-- Seção Principal -->
+        <main>
+            <!-- Seção "Sobre mim" -->
+            <section id="sobre">
+                <h2>Sobre mim</h2>
+                <p>Olá! Meu nome é Alan Martins e sou um estudante do Técnico em Informática no IFCE. 
+                Tenho interesse em desenvolvimento web e estou aprendendo HTML, CSS e JavaScript para 
+                criar aplicações interativas e funcionais.</p>
+                <p>Nesta página, você encontrará informações sobre meus projetos, habilidades e formas 
+                de me contatar. Sinta-se à vontade para explorar e conhecer mais sobre meu trabalho.</p>
+            </section>
+
+            <!-- Seção "Projetos" -->
+            <section id="projetos">
+                <h2>Projetos</h2>
+                <ul>
+                    <li>Projeto 1: Homepage Interativa (este projeto)</li>
+                    <li>Projeto 2: BLablabla</li>
+                    <li>Projeto 3: BLablabla</li>
+                </ul>
+            </section>
+
+            <!-- Linha horizontal -->
+            <hr>
+
+            <!-- Seção "Tabela de Contatos" -->
+            <section id="contatos">
+                <h2>Tabela de Contatos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ALan Martins</td>
+                            <td>alan@email.com</td>
+                            <td>(85) 123890</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Santos</td>
+                            <td>maria@email.com</td>
+                            <td>(85) 99876-5432</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Seção "Links e Navegação" -->
+            <section id="links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="https://www.ifce.edu.br" target="_blank">Site do IFCE</a></li>
+                    <li><a href="#sobre">Voltar ao Topo</a></li>
+                    <li><a href="documento.pdf" download>Baixar Documento (PDF)</a></li>
+                </ul>
+            </section>
+
+            <!-- Seção "Galeria de Imagens" -->
+            <section id="galeria">
+                <h2>Galeria</h2>
+                <img src="https://via.placeholder.com/200" alt="Imagem de perfil" width="200" height="200">
+                <figure>
+                    <img src="https://via.placeholder.com/300x200" alt="Projeto exemplo" width="300" height="200">
+                    <figcaption>Exemplo de um projeto realizado</figcaption>
+                </figure>
+            </section>
+
+            <!-- Seção "Formulário de Login" -->
+            <section id="login">
+                <h2>Área de Login</h2>
+                <form onsubmit="validarLogin(event)">
+                    <div class="form-group">
+                        <label for="usuario">Usuário:</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+            </section>
+
+            <!-- Seção "Feedback de Digitação" -->
+            <section id="feedback">
+                <h2>Feedback de Digitação</h2>
+                <div class="feedback-container">
+                    <label for="mensagem">Digite uma mensagem:</label>
+                    <input type="text" id="mensagem" placeholder="Digite algo aqui...">
+                    <p id="contadorCaracteres">Quantidade de caracteres: 0</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2026 - Minha Homepage. Todos os direitos reservados.</p>
+            <p>Desenvolvido como projeto de aprendizado em Fundamentos da Programação 2</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
