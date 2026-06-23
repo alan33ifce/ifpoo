@@ -7,7 +7,7 @@ public class Pessoa {
 		this.nome = nome;
 		this.telefone = telefone;
 	}
-
+ 
 	public String getNome() {
 		return nome;
 	}

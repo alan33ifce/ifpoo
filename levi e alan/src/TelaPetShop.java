@@ -135,6 +135,8 @@ public class TelaPetShop extends JFrame {
 				limparCampos();
 			}
 		});
+		
+		// ---- BUSCAR POR NOME ----
 		btnBuscar.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e) {
 
@@ -154,7 +156,8 @@ public class TelaPetShop extends JFrame {
         }
     }
 });
-
+		// ---- REMOVER ----
+		
 btnRemover.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e) {
 
@@ -176,6 +179,8 @@ btnRemover.addActionListener(new ActionListener() {
     }
 });
 
+		//---- LISTAR TODOS ----
+
 btnListarTodos.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e) {
 
@@ -193,6 +198,8 @@ btnListarTodos.addActionListener(new ActionListener() {
         exibirTexto(sb.toString());
     }
 });
+
+		//---- ATUALIZAR ----
 
 btnAtualizar.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e) {
@@ -245,6 +252,7 @@ btnAtualizar.addActionListener(new ActionListener() {
 		areaResultado.setText(texto);
 	}
 
+	/** verficia se tem algum numero na string */
 	private boolean contemNumero(String texto) {
     return texto.matches(".*\\d.*");
 }
