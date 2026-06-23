@@ -6,11 +6,17 @@ public abstract class Animal {
 	protected Pessoa dono;
 	static protected int totalAnimais;
 	
-	Animal(String nome, Pessoa dono, int idade){
+	Animal(String nome, int idade){
 		Animal.totalAnimais = Animal.totalAnimais +1;
 		this.nome = nome;
-		this.dono = dono;
 		this.idade = idade;
+	}
+
+	public String exibirDados() {
+    return "Nome: " + nome +
+           "\nIdade: " + idade +
+           "\nDono: " + (dono != null ? dono.getNome() : "nenhum") +
+           "\nTelefone: " + (dono != null ? dono.getTelefone() : "nenhum");
 	}
 
 	public abstract void emitirSom();

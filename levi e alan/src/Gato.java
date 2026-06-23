@@ -2,7 +2,7 @@
 public class Gato extends Animal {
 	private boolean arranhaMoveis;
 	Gato(String nome, Pessoa dono, int idade, boolean arranhaMoveis){
-		super(nome, dono, idade);
+		super(nome, idade);
 		this.arranhaMoveis = arranhaMoveis;
 	}
 	@Override

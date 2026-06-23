@@ -1,8 +1,8 @@
 
 public class Cachorro extends Animal implements AtendivelNoEstetica {
 	private String raca;
-	Cachorro(String nome, Pessoa dono, int idade, String raca){
-		super(nome, dono, idade);
+	Cachorro(String nome, int idade, String raca){
+		super(nome, idade);
 		this.raca = raca;
 	}
 	   public String getRaca() {
@@ -25,4 +25,10 @@ public void darBanho() {
 public void cortarUnhas() {
     System.out.println("Cortando unhas do cachorro...");
 }
+
+@Override
+public String exibirDados() {
+    return super.exibirDados() + "\nRaça: " + raca;
+}
+
 }
